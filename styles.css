@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Nunito:wght@300&family=Sriracha&display=swap');
+
+body {
+    background-color: #3a2e39;
+    color: #ebf5ee;
+    font-family: 'Sriracha';
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: larger;
+    font-family: 'Kelly Slab';
+}
+
+.image {
+    margin: auto;
+}
+
+.home:hover{
+    opacity:0.7;
+}
+
+nav {
+    width: 2em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 1em;
+}
+
+a {
+    color: #ebf5ee;
+    text-decoration: none;
+
+}
+
+.directory {
+    height: 20%;
+    padding-top: 1em;
+}
+
+nav > a{
+    margin-top:0.5em;
+}
+
+#headingContainer {
+    width: 100%;
+    margin: auto;
+    background: rgb(34, 108, 195);
+    background: linear-gradient(0deg, rgba(34, 108, 195, 1) 0%, rgba(34, 108, 195, 1) 0%, rgba(160, 45, 253, 1) 100%);
+}
+
+#heading {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    /* transform: rotate(4deg); */
+}
+
+#opening {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.chunk {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.hoverImage {
+    position: relative;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 300px;
+    height: 225px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 225px;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgb(100, 100, 100);
+    /* background: rgb(160, 45, 253);
+    background: linear-gradient(0deg, rgba(160, 45, 253, 1) 0%, rgba(34, 108, 195, 1) 100%); */
+}
+
+.hiddenText {
+    margin-top: 4em;
+    font-size: 18px;
+    text-align: center;
+}
+
+.hoverImage:hover .overlay {
+    opacity: 0.9;
+}
+
+footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+hr {
+    height: 1px;
+    background-color: #ebf5ee;
+    border: none;
+}
+
+.text {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.info {
+    margin: auto;
+    text-align: center;
+    color: #c0c0c0;
+
+}
+
+.heading3 {
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    color: #c0c0c0;
+}
+
+.outLinks:link {
+    color: rgb(255, 192, 116);
+}
+
+.outLinks:visited {
+    color: rgb(255, 192, 116);
+}
+
+a:hover {
+    color: rgb(245, 168, 73);
+}
+
+.outLinks:hover {
+    color: rgb(245, 168, 73);
+}
+
+.outLinks:active {
+    color: rgb(255, 214, 164);
+}
+
+/* Javascript Add-ons (Cats on home pg) */
+
+#cats{
+    margin-top: 3em;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#catImages {
+    
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+}
+
+#Ferbie:hover{
+    opacity:1;
+}
+
+#Ferbie {
+    margin-top: 2em;
+    margin: auto;
+    opacity:0.7;
+    cursor:pointer;
+}
+
+#Gigi:hover{
+    opacity:1;
+}
+
+#Gigi {
+    margin: auto;
+    opacity:0.7;
+    cursor:pointer;
+
+}
+
+
+
+@media(min-width:680px) {
+    .links {
+        width: 95%;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    nav {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        /* text-align: center; */
+
+    }
+
+    nav>a {
+        margin: 0.5em;
+    }
+
+    #headingContainer {
+        width: 85%;
+    }
+
+    #heading {
+        padding: 1.8em;
+        font-size: 5em;
+        text-align: center;
+        /* transform: rotate(10deg); */
+    }
+
+    .subheadingContainer {
+        /* padding: 2em; */
+        margin-top: 2em;
+        margin-bottom: 2em;
+        border: 3px solid rgb(160, 45, 253);
+        /* background-color: blue; */
+    }
+
+    #experienceBox {
+        border: 3px solid rgb(34, 108, 195);
+
+    }
+
+
+    .subheadingContainer {
+        padding: 2em;
+        width: 80%;
+        margin: auto;
+        margin-top: 3em;
+        /* background-color: blue; */
+    }
+
+    .chunk {
+        width: 80%;
+        margin: auto;
+        /* margin-top: 5em; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    #miniChunk1 {
+        width: 300px;
+        margin: auto;
+        text-align: center;
+        border-top: 1px solid rgb(160, 45, 253);
+        border-bottom: 1px solid rgb(160, 45, 253);
+    }
+
+    #miniChunk2 {
+        width: 300px;
+        margin: auto;
+        text-align: center;
+        margin-top: 3em;
+        border-top: 1px solid rgb(34, 108, 195);
+        border-bottom: 1px solid rgb(34, 108, 195);
+
+
+    }
+
+    .image {
+        margin: auto;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .hiddenText {
+        font-size: 20px;
+    }
+
+    #kitties {
+        width: 400px;
+        height: auto;
+    }
+
+    #environment {
+        width: 400px;
+    }
+
+    #ai {
+        width: 450px;
+    }
+
+    #animals {
+        width: 400px;
+    }
+
+    #violin {
+        width: 400px;
+    }
+
+    .hoverImage {
+        width: 400px;
+        height: 300px;
+    }
+
+    .overlay {
+        width: 400px;
+        height: 300px;
+    }
+
+    .info {
+        width: 80%;
+        color: #c0c0c0;
+        margin: auto;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    #work {
+        width: 450px;
+        padding: 1em;
+        height: 95%;
+        margin: auto;
+        margin-top: 5em;
+        /* background-color: blue; */
+        /* border: 1px solid rgb(160, 45, 253); */
+        /* background-color: blue; */
+    }
+
+    #extra {
+        width: 450px;
+        padding: 1em;
+        margin: auto;
+        /* border:1px solid rgb(160, 45, 253); */
+    }
+
+    #awards {
+        width: 450px;
+        padding: 1em;
+        margin: auto;
+    }
+
+
+}
+
+@media(min-width:1024px) {
+
+    .image3 {
+        display: flex;
+    }
+
+    .chunk {
+        margin-top: 6em;
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .text {
+        margin-top: 4em;
+        margin-left: 1em;
+        width: 50%;
+        /* background-color: blue; */
+    }
+
+    .hiddenText {
+        font-size: 22px;
+    }
+
+    #environment {
+        width: 350px;
+    }
+
+    #ai {
+        width: 350px;
+    }
+
+    #animals {
+        width: 350px;
+    }
+
+    #miniChunk1 {
+        width: 300px;
+        height: 150px;
+        /* background-color: blue; */
+    }
+
+    #miniChunk2 {
+        width: 300px;
+        height: 150px;
+        margin-top: 0;
+        /* background-color: blue; */
+    }
+
+    #activities {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #work {
+        width: 500px;
+
+    }
+
+    #extra {
+        width: 500px;
+    }
+
+    /* JS addons */
+    #catImages {
+        flex-direction: row;
+    }
+}
+
+@media(min-width:1200px) {
+    #heading3 {
+        margin-top: 0.5em;
+    }
+
+    .text {
+        margin-top: 7em;
+    }
+
+    #environment {
+        width: 400px;
+    }
+
+    #ai {
+        width: 400px;
+    }
+
+    #animals {
+        width: 400px;
+    }
+
+    #miniChunk1 {
+        width: 400px;
+    }
+
+    #miniChunk2 {
+        width: 400px;
+    }
+
+    #Ferbie{
+        width:320px;
+    }
+
+    #Gigi{
+        width:320px;
+    }
+}
